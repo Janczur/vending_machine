@@ -1,0 +1,13 @@
+services:
+  php:
+    build:
+      context: php
+      args:
+        TIMEZONE: ${TIMEZONE}
+    volumes:
+      - ../:/var/www/symfony
+      - symfony_app_var:/var/www/symfony/var
+    working_dir: /var/www/symfony
+
+volumes:
+  symfony_app_var:
