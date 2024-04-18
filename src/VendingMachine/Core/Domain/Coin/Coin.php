@@ -7,7 +7,7 @@ use InvalidArgumentException;
 
 final readonly class Coin
 {
-    public const ALLOWED_COINS = [1, 2, 5, 10, 200, 20, 50, 100];
+    public const ALLOWED_COINS = [1, 2, 5, 10, 20, 50, 100];
 
     private function __construct(
         private int $value
